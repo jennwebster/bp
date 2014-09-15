@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
-# Use postGRE as the database for Active Record
-gem 'pg'
+# Use sqllite as the database for Active Record
+gem 'sqlite3',           group: :development
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -39,5 +39,6 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 group :production do
+  gem 'pg'
   gem 'rails_12factor', '0.0.2'
 end
